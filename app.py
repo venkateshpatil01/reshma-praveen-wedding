@@ -1,7 +1,6 @@
 
 import streamlit as st
 from datetime import date
-from urllib.parse import quote
 from pathlib import Path
 import base64
 import textwrap
@@ -567,24 +566,6 @@ Reshma & Praveen
 With love · 2026
 </div>
 """)
-
-
-# WHATSAPP SHARE
-share = quote(
-    "You are warmly invited to celebrate Reshma weds Praveen! "
-    "Haldi: 12 December 2026. "
-    "Wedding: 13 December 2026. "
-    "Venue: VR Swamy Kalyan Mantapa. "
-    "Address: Ring Rd, Yamlimunuligaon, Taj Sultanpur, "
-    "Kalaburagi (Kalburgi), Karnataka 585104. "
-    "We would love to have your blessings and celebrate with you."
-)
-
-st.link_button(
-    "✧  SHARE INVITATION ON WHATSAPP  ✧",
-    f"https://wa.me/?text={share}",
-    use_container_width=True
-)
 
 
 # BACK TO COVER
